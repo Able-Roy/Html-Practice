@@ -1,0 +1,69 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.announcement{
+    padding: 5px;
+    background-color: #cd9997;
+}
+.hero-image{
+    text-align: center;
+    padding: 5px 0px;
+    border-bottom: 1px solid gray;
+}
+.hero-image img{
+    display: inline-block;
+    width: 340px;
+    height: 51px;
+}
+.main-nav{
+    display: inline-block;
+    margin-right: 10px;
+}
+.main-nav li{
+    display: inline-block;
+    color:#212b36;
+    padding: 0 20px 12px 20px;
+    font-size: 16px;
+}
+.search-box{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  margin: 12px 0;
+}
+.search-box:focus{
+    outline: none;
+}
+.my-account{
+    display: inline-block;
+}
+.search-icon, .my-account, .cart-icon{
+    margin: 5px;
+}
+.right-icons{
+    margin-right: 10px;
+    margin-top: 5px;
+    float: right;
+}
+.offer-announcement{
+    padding: 10px 0;
+    background: #cd9997;
+    text-align: center;
+    color: #e8cfce;
+}
+.offer-announcement a{
+    color: #e8cfce;
+}
+.my-account-block{
+    display: none;
+    position: absolute;
+}
+my-account-wpr:hover .my-account-block{
+    display: inline-block;
+}
+.my-account-wpr{
+    position: relative;
+}
