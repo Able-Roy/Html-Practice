@@ -1,110 +1,164 @@
-
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-.announcement{
-    padding: 5px;
-    background-color: #cd9997;
+header{
+    position: relative;
 }
-.hero-image{
-    text-align: center;
-    padding: 5px 0px;
-    border-bottom: 1px solid gray;
+.announcement {
+  padding: 5px;
+  background-color: #cd9997;
 }
-.hero-image img{
-    display: inline-block;
-    width: 340px;
-    height: 51px;
+.hero-image {
+  text-align: center;
+  padding: 5px 0px;
+  border-bottom: 1px solid gray;
 }
-.main-nav{
-    display: inline-block;
-    margin-right: 10px;
+.hero-image img {
+  display: inline-block;
+  width: 340px;
+  height: 51px;
 }
-.main-nav li{
-    display: inline-block;
-    color:#212b36;
-    padding: 0 20px 12px 20px;
-    font-size: 16px;
+.main-nav {
+  display: inline-block;
+  margin-right: 10px;
 }
-.search-box{
+.main-nav li {
+  display: inline-block;
+  color: #212b36;
+  padding: 0 20px 12px 20px;
+  font-size: 16px;
+}
+.search-box {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
   margin: 12px 0;
 }
-.search-box:focus{
-    outline: none;
+.search-box:focus {
+  outline: none;
 }
-.my-account{
-    display: inline-block;
-    position: relative;
+.my-account {
+  display: inline-block;
+  position: relative;
 }
-.search-icon, .my-account, .cart-icon{
-    margin: 10px;
+.search-icon,
+.my-account,
+.cart-icon {
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.right-icons {
+  margin-right: 20px;
+  margin-top: 5px;
+  float: right;
+}
+.offer-announcement {
+  padding: 10px 0;
+  background: #cd9997;
+  text-align: center;
+  color: #e8cfce;
+}
+.offer-announcement a {
+  color: #e8cfce;
+}
+.my-account-wpr {
+  display: none;
+  position: absolute;
+  width: 160px;
+  left: -80px;
+  background: #fff;
+  border-bottom: 5px solid black;
+  padding-right: 10px;
+}
+.my-account:hover .my-account-wpr {
+  display: block;
+}
+.my-account:hover .my-account-wpr ul li {
+  list-style: none;
+  margin: 0 6px;
+  padding-bottom: 5px;
+}
+.cart-icon {
+  position: relative;
+}
+.cart-count {
+  display: inline-block;
+  position: absolute;
+  left: 7px;
+  top: 6px;
+}
+nav a {
+  text-decoration: none;
+  color: #212b36;
+}
+.menu-link {
+  display: block;
+  position: relative;
+}
+.menu-link:hover {
+  border-bottom: 5px solid black;
+}
+.menu-link-normal {
+  display: none;
+  position: absolute;
+  width: 240px;
+  background: #fff;
+  border-bottom: 5px solid black;
+  padding-right: 10px;
+  top: 120%;
+  left: 0;
+}
+.menu-link:hover .menu-link-normal {
+  display: block;
+}
+.menu-link-normal ul{
+    padding: 20px 5px;
+}
+.menu-link-normal li {
+  list-style: none;
+  display: block;
+}
+.menu-link-normal li a{
+    color: rgba(33,43,54,.7);
+}
+.menu-link-normal li a:hover{
+    color: #212b36;
+}
+.mega-menu-wrapper{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    margin-bottom: 5px solid black;
+}
+.mega-menu-cols{
     display: inline-block;
     vertical-align: top;
+    box-sizing: border-box;
+    margin: 1%;
+    width: 22%;
 }
-.right-icons{
-    margin-right: 20px;
-    margin-top: 5px;
-    float: right;
-}
-.offer-announcement{
-    padding: 10px 0;
-    background: #cd9997;
-    text-align: center;
-    color: #e8cfce;
-}
-.offer-announcement a{
-    color: #e8cfce;
-}
-.my-account-wpr{
-    display: none;
-    position: absolute;
-    width: 160px;
-    left: -80px;
-    background: #fff;
-    border-bottom: 5px solid black;
-    padding-right: 10px;
-}
-.my-account:hover .my-account-wpr{
+.mega-menu-link:hover .mega-menu-wrapper{
     display: block;
 }
-.my-account:hover .my-account-wpr ul li{
-    list-style: none;
-    margin: 0 6px;
-    padding-bottom: 5px;
-}
-.cart-icon{
-    position: relative;
-}
-.cart-count{
-    display: inline-block;
-    position: absolute;
-    left: 7px;
-    top: 6px;
-}
-nav a{
-    text-decoration: none;
-    color:#212b36
-}
-.menu-link{
-    display: block;
-    position: relative;
-}
-.menu-link-normal{
-    display: none;
-    position: absolute;
-    width: 160px;
-    background: #fff;
-    border-bottom: 5px solid black;
-    padding-right: 10px;
-}
-.menu-link:hover .menu-link-normal{
+.mega-menu-cols li{
     display: block;
 }
-.menu-link-normal li{
-    list-style: none;
+.mega-menu-cols li{
+    color: rgba(33,43,54,.7);
+}
+.mega-menu-cols li:hover{
+    color: #212b36;
+}
+
+.mega-menu-cols h1{
+    text-align: left;
+    font-size: 16px;
+    color: #212b36;
+    font-weight: normal;
+    margin: 10px 20%;
 }
