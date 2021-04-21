@@ -39,12 +39,15 @@ body{
 }
 .my-account{
     display: inline-block;
+    position: relative;
 }
 .search-icon, .my-account, .cart-icon{
-    margin: 5px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 .right-icons{
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 5px;
     float: right;
 }
@@ -57,13 +60,51 @@ body{
 .offer-announcement a{
     color: #e8cfce;
 }
-.my-account-block{
+.my-account-wpr{
     display: none;
     position: absolute;
+    width: 160px;
+    left: -80px;
+    background: #fff;
+    border-bottom: 5px solid black;
+    padding-right: 10px;
 }
-my-account-wpr:hover .my-account-block{
-    display: inline-block;
+.my-account:hover .my-account-wpr{
+    display: block;
 }
-.my-account-wpr{
+.my-account:hover .my-account-wpr ul li{
+    list-style: none;
+    margin: 0 6px;
+    padding-bottom: 5px;
+}
+.cart-icon{
     position: relative;
+}
+.cart-count{
+    display: inline-block;
+    position: absolute;
+    left: 7px;
+    top: 6px;
+}
+nav a{
+    text-decoration: none;
+    color:#212b36
+}
+.menu-link{
+    display: block;
+    position: relative;
+}
+.menu-link-normal{
+    display: none;
+    position: absolute;
+    width: 160px;
+    background: #fff;
+    border-bottom: 5px solid black;
+    padding-right: 10px;
+}
+.menu-link:hover .menu-link-normal{
+    display: block;
+}
+.menu-link-normal li{
+    list-style: none;
 }
