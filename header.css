@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
 }
-header{
-    position: relative;
+header {
+  position: relative;
 }
 .announcement {
   padding: 5px;
@@ -114,51 +114,189 @@ nav a {
 .menu-link:hover .menu-link-normal {
   display: block;
 }
-.menu-link-normal ul{
-    padding: 20px 5px;
+.menu-link-normal ul {
+  padding: 20px 5px;
 }
 .menu-link-normal li {
   list-style: none;
   display: block;
 }
-.menu-link-normal li a{
-    color: rgba(33,43,54,.7);
+.menu-link-normal li a {
+  color: rgba(33, 43, 54, 0.7);
 }
-.menu-link-normal li a:hover{
-    color: #212b36;
+.menu-link-normal li a:hover {
+  color: #212b36;
 }
-.mega-menu-wrapper{
-    display: none;
-    position: absolute;
-    width: 100%;
-    background: #fff;
-    left: 0;
-    margin-bottom: 5px solid black;
+.mega-menu-wrapper {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  margin-bottom: 5px solid black;
 }
-.mega-menu-cols{
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    margin: 1%;
-    width: 22%;
+.mega-menu-cols {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 1%;
+  width: 22%;
 }
-.mega-menu-link:hover .mega-menu-wrapper{
-    display: block;
+.mega-menu-link:hover .mega-menu-wrapper {
+  display: block;
 }
-.mega-menu-cols li{
-    display: block;
+.mega-menu-cols li {
+  display: block;
 }
-.mega-menu-cols li{
-    color: rgba(33,43,54,.7);
+.mega-menu-cols li {
+  color: rgba(33, 43, 54, 0.7);
 }
-.mega-menu-cols li:hover{
-    color: #212b36;
+.mega-menu-cols li:hover {
+  color: #212b36;
 }
 
-.mega-menu-cols h1{
-    text-align: left;
-    font-size: 16px;
-    color: #212b36;
-    font-weight: normal;
-    margin: 10px 20%;
+.mega-menu-cols h1 {
+  text-align: left;
+  font-size: 16px;
+  color: #212b36;
+  font-weight: normal;
+  margin: 10px 20%;
+}
+/*
+  Mid bar section start
+
+*/
+.banner-container {
+  position: relative;
+}
+.banner-content {
+  position: absolute;
+  top: 0px;
+  width: 560px;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 83%;
+  left: 30%;
+}
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-text h2 {
+  color: #a98482;
+  font-size: 60px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+.banner-text div {
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: lighter;
+}
+.banner-text a {
+  text-decoration: none;
+  background-color: #bc7775;
+  color: #fff;
+  padding: 10px;
+  margin: 25px;
+}
+/*
+  New Arrival Section Start
+
+*/
+
+.new-arrivals-list-item{
+  float: left;
+  position: relative;
+  width: 20%;
+  margin: 2%;
+  max-height: 569px;
+}
+.new-arrivals-list-item a{
+  position: absolute;
+  display: none;
+  width: 90%;
+  text-decoration: none;
+  background-color: #bc7775;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  top: 73%;
+  font-size: 20px;
+}
+.new-arrivals-list-item:hover a{
+  display: block;
+}
+.new-arrivals-list-item div{
+  display: inline-block;
+  margin: 8px;  
+  color: #B0B0B0;
+  font-weight: lighter;
+}
+.new-arrivals-list-item > div:hover{
+  color: #bc7775;
+}
+.new-arrivals-list-item img {
+  height: 479px;
+}
+.new-arrivals-header{
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #a98482;
+  margin: 15px 0px;
+}
+@keyframes imgbob{
+  from{height: 479px;}
+  to{height: 490px;}
+}
+.new-arrivals-list-item img:hover {
+  animation: imgbob 1s linear 0s .7 forwards;
+}
+
+/*
+  What are you looking for section starts
+
+*/
+.what-are-you-looking{
+  clear: left;
+  background: linear-gradient(#FFE4E4 50%, #fff 50%);
+}
+.wayl-header{
+  text-align: center;
+  color: #a98482;
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 15px;
+}
+.wayl-flex-container{
+  display: flex;
+  width: 100vw;
+  /* gap: 20px; */
+}
+.wayl-flex-item-bg{
+  background-image: url('./assets/wayl1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+} 
+.wayl-flex-item{
+  width: 20%;
+  margin: 20px;
+}
+
+.wayl-flex-item a{
+  background-color: #bc7775;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
 }
